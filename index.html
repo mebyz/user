@@ -24,9 +24,6 @@
         const path = window.location.pathname;
         const userHash = path.split('/').pop(); // Gets the last part after '/'
         document.getElementById('userHash').textContent = userHash || 'No hash provided';
-        setTimeout(() => {
-            window.location.href = `https://mebyz.github.io/user/${userHash}`;
-        }, 3000); // 3-second delay
     </script>
 </body>
 </html>
